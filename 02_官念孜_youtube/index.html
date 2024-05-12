@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <!-- 1. css reset -->
+    <link rel="stylesheet" href="./styles/cssreset.css">
+    <!-- 2. 放入 google 字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./image/icons/youtube-icon.ico">
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- 3. 建立 style 的 css 要 link 起來 -->
+    <link rel="stylesheet" href="./styles/allstyle.css">
+</head>
+
+<body>
+    <!-- header 導覽列--------------------------------------------------------------------------------------------->
+    <div id="header">
+        <table>
+            <tr>
+                <td id="hamburger" style="text-align: center;">
+                    <img src="./image/icons/hamburger-menu.png">
+                </td>
+                <td id="icon">
+                    <img src="./image/icons/yt icon.png">
+                </td>
+                <td id="search-bar">
+                    <div id="empty"></div>
+                    <input type="text" id="searchbar" value="搜尋">
+                </td>
+                <td id="microphone">
+                    <div id="empty2"></div>
+                    <img src="./image/icons/mircrophone.png">
+                </td>
+                <td id="video-upload">
+                    <img src="./image/icons/video-upload.png">
+                </td>
+                <td id="bell">
+                    <img src="./image/icons/bell.png">
+                </td>
+                <td id="user-name">
+                    <img src="./image/icons/user name.png">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- side-bar 側邊選單--------------------------------------------------------------------------------------------->
+    <div class="menu">
+        <ul>
+            <div class="box1">
+                <li id="home">
+                    <img src="./image/icons/home.png">&nbsp;&nbsp;&nbsp;&nbsp;首頁
+                </li>
+                <li>
+                    <img src="./image/icons/short-icon.png">&nbsp;&nbsp;&nbsp;&nbsp;Shorts
+                </li>
+                <li>
+                    <img src="./image/icons/subscription.png">&nbsp;&nbsp;&nbsp;&nbsp;訂閱內容
+                </li>
+                <li>
+                    <img src="./image/icons/yt-music.png">&nbsp;&nbsp;&nbsp;&nbsp;YouTube Music
+                </li>
+            </div>
+
+            <div class="box2">
+                <li>
+                    你的內容<img src="./image/icons/arrow-right.png">
+                </li>
+                <li>
+                    <img src="./image/icons/info.png">&nbsp;&nbsp;&nbsp;&nbsp;你的頻道
+                </li>
+                <li>
+                    <img src="./image/icons/whatch-review.png">&nbsp;&nbsp;&nbsp;&nbsp;觀看紀錄
+                </li>
+                <li>
+                    <img src="./image/icons/your video.png">&nbsp;&nbsp;&nbsp;&nbsp;你的影片
+                </li>
+                <li>
+                    <img src="./image/icons/timer.png">&nbsp;&nbsp;&nbsp;&nbsp;稍後觀看
+                </li>
+                <li>
+                    <img src="./image/icons/download.png">&nbsp;&nbsp;&nbsp;&nbsp;已下載內容
+                </li>
+                <li>
+                    <img src="./image/icons/arrow-bottom.png">&nbsp;&nbsp;&nbsp;&nbsp;顯示更多
+                </li>
+            </div>
+            <div class="box3">
+                <li id="subscribe">訂閱內容</li>
+                <li>
+                    <img src="./image/short-img-icon/short-img-icon-36.png">&nbsp;&nbsp;&nbsp;&nbsp;我愛貓大
+                </li>
+                <li>
+                    <img src="./image/short-img-icon/short-img-icon-37.png">&nbsp;&nbsp;&nbsp;&nbsp;Video TV
+                </li>
+                <li>
+                    <img src="./image/short-img-icon/short-img-icon-38.png">&nbsp;&nbsp;&nbsp;&nbsp;三立華劇 SET Dr..
+                </li>
+                <li>
+                    <img src="./image/short-img-icon/short-img-icon-39.png">&nbsp;&nbsp;&nbsp;&nbsp;SSUtv Speaks
+                </li>
+                <li>
+                    <img src="./image/short-img-icon/short-img-icon-40.png">&nbsp;&nbsp;&nbsp;&nbsp;一小時英文聆聽..
+                </li>
+                <li>
+                    <img src="./image/short-img-icon/short-img-icon-41.png">&nbsp;&nbsp;&nbsp;&nbsp;Listen & Speak A..
+                </li>
+                <li>
+                    <img src="./image/short-img-icon/short-img-icon-42.png">&nbsp;&nbsp;&nbsp;&nbsp;DesignSource..
+                </li>
+                <li>
+                    <img src="./image/icons/arrow-bottom.png">顯示另外417個項目
+                </li>
+            </div>
+        </ul>
+    </div>
+    <!-- classification-bar 分類列--------------------------------------------------------------------------------------------->
+    <div id="classification-bar">
+        <label>全部</label>
+        <label>音樂</label>
+        <label>合輯</label>
+        <label>直播中</label>
+        <label>ASMR</label>
+        <label>自然</label>
+        <label>最新上傳</label>
+        <label>已觀看</label>
+        <label>讓你耳目一新的影片</label>
+    </div>
+    <!-- content-video 欄位--------------------------------------------------------------------------------------------->
+    <!-- 影片欄位橫向 01 -->
+    <div class="container-video">
+        <!-- 影片一 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/01.png">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/01.png">
+                        <div class="text-block1">Cityscape Serenade: Urban Jazz Retreat for Relaxation and...</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">cozy Bedroom</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 1萬次 直播時間: 7天前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片二 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/02.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/02.png">
+                        <div class="text-block1">【獨處歌單01】2024流行歌曲｜沈浸式好聽英文歌單｜一個人時光...</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">英文歌曲合集</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 111萬次 直播時間: 8個月前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片三 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/03.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/03.png">
+                        <div class="text-block1">📚4小時實時學習(鋼琴輕音樂🎹) ｜下雨天的東京新宿🌦️｜番茄工作法(25+5)｜自帶倒計時&鈴聲提醒｜Study with me</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">Abao in Tokyo</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 773萬次 直播時間: 1年前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片四 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/04.png">
+                <ul>
+                    <li>
+                        <img src=".//image/video-img-icon/04.png">
+                        <div class="text-block1">EP16【第二季最終回：夢裡什麼都有BROSBOND’S DREAM - the last episode of the season 2】</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">CONCOR</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 2143次 直播時間: 21小時前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片五 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/05.png">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/05.png">
+                        <div class="text-block1">taylor swift red | 2 hours of calm piano ♪</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">Minnz Piano</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 204萬次 直播時間: 2 年前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片六 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/06.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/05.png">
+                        <div class="text-block1">Urban Nightscape - Transform Your Bedroom into a Relaxing Oasis with City Lights and Smooth Jazz</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">Cozy Jazz Ambience</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 132次 直播時間: 3 天前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片七 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/07.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/05.png">
+                        <div class="text-block1">🎧保姆級聽力訓練：每天堅持聽1小時，聽懂美國人每一句｜快速習慣美國人正常語速｜真實英文聽力</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">亮英文 - Bright English</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 163萬次 直播時間: 7個月前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片八 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/08.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/07.png">
+                        <div class="text-block1">3-HOUR STUDY WITH ME | Relaxing Lo-Fi | Pomodoro 50/10 | Sunny Day - Spring 2024 🌸</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">Carrot TD</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 8.2萬次 直播時間: 1 個月前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片九 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/09.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/09.png">
+                        <div class="text-block1">合輯 - Cruel Summer 殘忍的夏日- Taylor Swift 泰勒絲 中英歌詞 中文字幕 | Liya Music Land</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">泰勒絲、Jisoo和其他藝人</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 1萬次 直播時間: 7天前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片十 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/10.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/09.png">
+                        <div class="text-block1">3-HOUR STUDY WITH ME | Relaxing Lo-Fi | Pomodoro 50/10 | Sunny Day - Spring 2024 🌸</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">Carrot TD</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 8萬次 直播時間: 7天前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片十一 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/11.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/11.png">
+                        <div class="text-block1">Everyday English Conversation Practice | 30 Minutes English Listening</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">English Easy Practice</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 1006萬次 直播時間: 1 年前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片十二 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/12.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/12.png">
+                        <div class="text-block1">Delicate Jazz Corner ☕ Smooth Jazz Music with Fireplace Sounds in Luxury Apartment to Relax, Study</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">Jazz Corner</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 530次 直播時間: 2 天前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片十三 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/13.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/13.png">
+                        <div class="text-block1">City Lights Symphony - Jazz Elegance in Your Luxurious Living Room Oasis 🌃🎷Luxury Apartment</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">Cozy Bedroom</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 2.9萬次 直播時間: 7天前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片十四 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/14.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/14.png">
+                        <div class="text-block1">Cityscape Serenade: Urban Jazz Retreat for Relaxation and...</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">cozy Bedroom</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 1萬次 直播時間: 7天前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 影片十五 -->
+        <div class="card">
+            <div class="cover">
+                <img src="./image/video-img/15.png" alt="">
+                <ul>
+                    <li>
+                        <img src="./image/video-img-icon/15.png">
+                        <div class="text-block1">Cityscape Serenade: Urban Jazz Retreat for Relaxation and...</div>
+                    </li>
+                    <li>
+                        <div class="text-block2">cozy Bedroom</div>
+                    </li>
+                    <li>
+                        <div class="text-block3">觀看次數: 1萬次 直播時間: 7天前</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</body>
+
+</html>

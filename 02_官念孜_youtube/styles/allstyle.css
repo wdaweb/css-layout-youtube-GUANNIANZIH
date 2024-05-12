@@ -1,0 +1,268 @@
+
+/* 一、整體文件設定:-------------------------------------------------------------- */
+/* 把剛剛的 google font 貼入外部樣式表 */
+body{
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+/* 設定 html、body - 抓到瀏覽器的高度 */
+html,
+body{
+    height: 100%;
+}
+
+/* header 導覽列-------------------------------------------------------------- */
+#header{
+    background-color: white;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    z-index: 5;
+}
+#header table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#header td{
+    /* border: 1px solid red; */
+    text-align: left;
+    vertical-align: middle;
+}
+#hamburger{
+    width: 80px;
+}
+#hamburger img{
+    scale: 0.85;
+}
+#icon{
+    width: 760px;
+}
+#icon img{
+    scale: 0.85;
+}
+#search-bar{
+    width: 820px;
+}
+input{
+    height: 46px;
+    width: 710px;
+    border: 1.5px solid lightgray;
+    border-radius: 50px 0px 0px 50px;
+    font-size: 21px;
+    color: gray;
+    text-indent: 1.15rem;
+}
+#empty{
+    width: 0px;
+    height: 0px;
+    position: relative;
+}
+#empty::after{
+    content: " ";
+    background:url(../image/icons/search.png) no-repeat center;
+    background-size: 36px;
+    display: inline-block;
+    height: 48px;
+    width: 80px;
+    background-color: white;
+    border: 1.5px solid lightgray;
+    border-radius: 0px 50px 50px 0px;
+    position: absolute;
+    left: 716.5px;
+    z-index: 3;
+}
+#microphone{
+    width: 650px;
+}
+#empty2{
+    width: 0px;
+    height: 0px;
+    position: relative;
+}
+#empty2::after{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 1px;
+    width: 56px;
+    height: 56px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 50%;
+}
+#microphone img{
+    margin-left: 8px;
+    scale: 0.75;
+}
+#video-upload{
+    width: 60px;
+}
+#video-upload img{
+    scale: 0.9;
+}
+#bell{
+    width: 60px;
+}
+#bell img{
+    scale: 0.8;
+}
+#user-name{
+    width: 80px;
+}
+#user-name img{
+    scale: 0.8;
+}
+
+
+
+/* sidebar 側邊選單-------------------------------------------------------------- */
+.menu{
+    background-color: #ffffff;
+    /* background-color: lightcoral; */
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    top: 75px;   
+    z-index: 1;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding: 12px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+.box1,
+.box2,
+.box3{
+    box-shadow: 0rem 0.1rem 0rem rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+/* side-bar 三個box */
+.menu li{
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    line-height: 3.2rem;
+    /* 前面空白 */
+    padding-left: 1rem;
+    margin-bottom: 12px;
+}
+.menu li a{
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    scroll-behavior:initial;
+}
+.menu li:hover{
+    cursor: pointer;
+    background-color:rgba(184, 182, 182, 0.2);
+    border-radius: 12px;
+}
+.menu img{
+    scale: 0.9;
+}
+#home{
+    background-color:rgba(184, 182, 182, 0.2);
+    border-radius: 12px;
+}
+#subscribe{
+    cursor: none;
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 0px;
+}
+/* classifiable bar 分類列------------------------------------------------------ */
+#classification-bar{
+    background-color: white;
+    /* background-color: lightpink; */
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    align-items:flex-start;
+    top: 75px;
+    left: 260px;
+    z-index: 5;
+}
+#classification-bar label{
+    background-color: rgb(230, 230, 230);
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 8px 8px;
+    color: black;
+}
+#classification-bar input{
+    display: none;
+}
+#classification-bar label:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+#classification-bar label:first-child{
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    margin-left: 38px;
+}
+/* content-video 欄位---------------------------------------------- */
+.container-video{
+    /* background-color: white; */
+    /* background-color: lightgreen; */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content:center;
+    float: left;
+    top: 115px;
+    left: 260px;
+    z-index: 1;
+    padding: 12px 0px;
+    box-sizing: border-box;
+}
+.cover{
+    /* background-color: blue; */
+    padding: 0px;
+    width: 340px;
+    height: 280px;
+    /* border: 24px solid white; */
+    margin: 40px 60px;
+    float: left;
+}
+.cover:hover{
+    cursor: pointer;
+}
+.cover>img{
+    display: inline-block;
+    width: 340px;
+}
+.cover>img:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: brightness(0.5);
+    border-radius: 6%;
+}
+.text-block1{
+    display: inline-block;
+    width: 250px;
+    /* background-color: aqua; */
+    text-align: left;
+}
+.text-block2{
+    display: inline-block;
+    width: 340px;
+    /* background-color: red; */
+    text-indent: 60px;
+    text-align: left;
+}
+.text-block3{
+    display: inline-block;
+    width: 340px;
+    /* background-color: palevioletred; */
+    text-indent: 60px;
+    text-align: left;
+}
+
+
+
+
+
+
